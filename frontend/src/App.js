@@ -6,12 +6,12 @@ import Contacts from "./components/Contacts";
 import Search from "./components/Search";
 
 function App() {
-  const { showModal } = useGlobalContext();
+  const { showModal, favorites } = useGlobalContext();
   return (
     <div className="App">
       <main>
-        {/* <Search /> */}
-        {/* <Favorites /> */}
+        <Search />
+        {favorites.length > 0 && <Favorites />}
         <Contacts />
         {showModal && <Modal />}
       </main>

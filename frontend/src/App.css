@@ -172,7 +172,10 @@ ul {
   background: var(--white);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.home-container {
+  margin-left: 60px;
 }
 .search-container form {
   width: var(--view-width);
@@ -213,10 +216,7 @@ ul {
 }
 .favorite-item {
   text-align: center;
-}
-.favorites-img {
-  width: 60px;
-  border-radius: 50%;
+  width: 160px;
   border: 5px solid var(--white);
   cursor: pointer;
 }
